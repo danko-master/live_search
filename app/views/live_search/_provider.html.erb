@@ -1,0 +1,17 @@
+<li>
+    <a class="ent-hot ent-x-large entity" href="#{<%= provider.id %>}">
+     <div class="e-inner">
+      <div class="e-img">
+        <!--img src="/uploads/provider/icon/12212/int_vneshka.gif"-->
+        <% if provider.icon %>
+          <%= provider.icon %>
+        <% else %>
+          <img alt="Default" src="/default.png">
+        <% end %>
+      </div>
+      <div class="e-text">
+        <p><%= provider.title %></p>
+      </div>
+     </div>
+    </a>
+</li>

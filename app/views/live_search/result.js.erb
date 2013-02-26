@@ -1,0 +1,5 @@
+$('.search-results').html("<%= escape_javascript(render('providers')) %>")
+$('#back').attr("style","display: <%= @back %>")
+$('#back').attr("data-page-number","<%= @page_back %>")
+$('#forward').attr("style","display: <%= @forward %>")
+$('#forward').attr("data-page-number","<%= @page_next %>")
